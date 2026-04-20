@@ -1,0 +1,52 @@
+---
+import Reveal from "./motion/Reveal";
+---
+
+<section class="section-shell section-spacing" id="beneficios">
+  <div class="section-grid items-start">
+    <Reveal client:load direction="left">
+      <div class="section-copy">
+        <div class="section-kicker">06 · Beneficios para psicólogos</div>
+        <h2 class="section-title">Empodere su práctica clínica con datos objetivos</h2>
+      </div>
+    </Reveal>
+
+    <Reveal client:load delay={0.1} direction="right">
+      <div class="benefits-grid">
+        <Reveal client:load delay={0.02}>
+          <article class="benefit-card">
+          <span class="panel-label">Detección temprana</span>
+          <p class="benefit-card__body">
+            Identifique cambios en el estado del paciente antes de que se manifiesten clínicamente
+            como recaídas.
+          </p>
+          </article>
+        </Reveal>
+        <Reveal client:load delay={0.1}>
+          <article class="benefit-card">
+          <span class="panel-label">Evidencia fisiológica</span>
+          <p class="benefit-card__body">
+            Complementa la evaluación clínica con señales fisiológicas cuantificables.
+          </p>
+          </article>
+        </Reveal>
+        <Reveal client:load delay={0.18}>
+          <article class="benefit-card">
+          <span class="panel-label">Seguimiento entre sesiones</span>
+          <p class="benefit-card__body">
+            Mantenga visibilidad sobre la evolución del paciente incluso fuera de consulta.
+          </p>
+          </article>
+        </Reveal>
+        <Reveal client:load delay={0.26}>
+          <article class="benefit-card">
+          <span class="panel-label">Diferenciación clínica</span>
+          <p class="benefit-card__body">
+            Ofrezca a sus pacientes un estándar de monitoreo digital avanzado.
+          </p>
+          </article>
+        </Reveal>
+      </div>
+    </Reveal>
+  </div>
+</section>

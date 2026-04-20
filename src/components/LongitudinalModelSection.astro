@@ -1,0 +1,47 @@
+---
+import Reveal from "./motion/Reveal";
+---
+
+<section class="section-shell section-spacing" id="modelo-longitudinal">
+  <div class="section-grid section-grid--reverse items-center">
+    <Reveal client:load delay={0.08} direction="left" className="mobile-order-visual">
+      <div class="model-visual">
+        <div class="model-visual__header">
+          <span class="panel-label">Baseline dinámico</span>
+          <span class="panel-value">desviación → alerta temprana</span>
+        </div>
+        <div class="model-chart">
+          <div class="model-chart__baseline"></div>
+          <div class="model-chart__signal"></div>
+          <div class="model-chart__event model-chart__event--1"></div>
+          <div class="model-chart__event model-chart__event--2"></div>
+        </div>
+      </div>
+    </Reveal>
+
+    <Reveal client:load direction="right" className="mobile-order-copy">
+      <div class="section-copy">
+        <div class="section-kicker">07 · Modelo longitudinal</div>
+        <h2 class="section-title">Cada paciente es su propio punto de referencia</h2>
+
+        <div class="section-body">
+          <p>Los sistemas tradicionales comparan pacientes entre sí.</p>
+          <p>Prysmia Care utiliza un enfoque diferente.</p>
+          <p>
+            El sistema construye un baseline dinámico para cada individuo y analiza cómo cambian sus
+            patrones fisiológicos y clínicos a lo largo del tiempo.
+          </p>
+          <p>
+            Esto permite detectar desviaciones significativas respecto al patrón histórico del propio
+            paciente.
+          </p>
+        </div>
+
+        <p class="section-emphasis">
+          En salud mental, los cambios más importantes ocurren dentro del individuo, no entre
+          individuos.
+        </p>
+      </div>
+    </Reveal>
+  </div>
+</section>

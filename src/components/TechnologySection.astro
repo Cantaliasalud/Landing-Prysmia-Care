@@ -1,0 +1,84 @@
+---
+import Reveal from "./motion/Reveal";
+---
+
+<section class="section-shell section-spacing" id="tecnologia">
+  <div class="section-grid items-center">
+    <Reveal client:load direction="left">
+      <div class="section-copy">
+        <div class="section-kicker">03 · Tecnología</div>
+        <h2 class="section-title">Biometría pupilar aplicada a salud mental</h2>
+        <p class="section-lead">Tu cámara se convierte en una herramienta de medición fisiológica.</p>
+
+        <div class="section-body">
+          <p>
+            Prysmia Care utiliza sensores ópticos estándar —como la cámara de un smartphone o laptop—
+            para capturar biomarcadores pupilares durante tareas de anticipación de recompensa.
+          </p>
+          <p>
+            La dilatación pupilar refleja la activación de circuitos motivacionales del cerebro,
+            asociados a sistemas dopaminérgicos implicados en la motivación y la respuesta al refuerzo.
+          </p>
+          <p>
+            Esta señal fisiológica permite observar una dimensión central de la depresión:
+            <strong> la anhedonia.</strong>
+          </p>
+          <p>
+            Todo esto ocurre sin hardware especializado ni laboratorios complejos.
+          </p>
+        </div>
+
+        <p class="section-emphasis">Solo fisiología, datos y protocolo científico.</p>
+      </div>
+    </Reveal>
+
+    <Reveal client:load delay={0.1} direction="right">
+      <div class="technology-visual">
+        <div class="device device--laptop">
+          <div class="device__frame">
+            <div class="device__screen">
+              <div class="device__screen-header">
+                <span class="panel-label">Captura pupilar</span>
+                <span class="panel-value">Reward anticipation task</span>
+              </div>
+
+              <div class="pupil-scan">
+                <div class="pupil-scan__halo"></div>
+                <div class="pupil-scan__ring"></div>
+                <div class="pupil-scan__core"></div>
+                <div class="pupil-scan__axis pupil-scan__axis--x"></div>
+                <div class="pupil-scan__axis pupil-scan__axis--y"></div>
+              </div>
+
+              <div class="device__signal">
+                <span class="device__signal-line device__signal-line--primary"></span>
+                <span class="device__signal-line device__signal-line--secondary"></span>
+              </div>
+            </div>
+          </div>
+          <div class="device__base"></div>
+        </div>
+
+        <div class="device device--phone">
+          <div class="device__frame">
+            <div class="device__screen device__screen--phone">
+              <div class="phone-scan">
+                <div class="phone-scan__glow"></div>
+                <div class="phone-scan__target"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="technology-overlay technology-overlay--top">
+          <span class="panel-label">Señal fisiológica</span>
+          <span class="panel-value">Dilatación pupilar</span>
+        </div>
+        <div class="technology-overlay technology-overlay--bottom">
+          <span class="panel-label">Sin hardware especializado</span>
+          <span class="panel-value">Webcam y smartphone</span>
+        </div>
+      </div>
+    </Reveal>
+  </div>
+</section>

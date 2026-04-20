@@ -1,0 +1,54 @@
+---
+import Reveal from "./motion/Reveal";
+---
+
+<section class="section-shell section-spacing" id="rigor-cientifico">
+  <div class="section-grid items-start">
+    <Reveal client:load direction="left">
+      <div class="section-copy">
+        <div class="section-kicker">08 · Rigor científico</div>
+        <h2 class="section-title">Diseñado con base en neurociencia clínica</h2>
+
+        <div class="section-body">
+          <p>
+            La investigación en neurociencia ha demostrado que la dilatación pupilar durante la
+            anticipación de recompensas se relaciona con la activación de circuitos motivacionales
+            del cerebro.
+          </p>
+          <p>
+            En pacientes con depresión, esta respuesta suele encontrarse reducida, fenómeno asociado
+            especialmente con la presencia de anhedonia.
+          </p>
+          <p>
+            Prysmia Care se desarrolla sobre esta base científica para modelar longitudinalmente esta
+            dimensión del trastorno depresivo.
+          </p>
+        </div>
+      </div>
+    </Reveal>
+
+    <Reveal client:load delay={0.1} direction="right">
+      <div class="science-panel">
+        <article class="science-paper">
+          <div class="science-paper__header">
+            <span class="panel-label">Paper reference</span>
+            <span class="panel-value">Brendler et al.</span>
+          </div>
+          <div class="science-paper__chart science-paper__chart--primary"></div>
+        </article>
+        <article class="science-paper">
+          <div class="science-paper__header">
+            <span class="panel-label">Clinical neuroscience</span>
+            <span class="panel-value">Reward anticipation / pupil dilation</span>
+          </div>
+          <div class="science-paper__chart science-paper__chart--secondary"></div>
+        </article>
+        <div class="science-logos science-logos--centered">
+          <span class="science-logos__item">Neurociencia clínica</span>
+          <span class="science-logos__item">Biomarcadores pupilares</span>
+          <span class="science-logos__item">Modelado longitudinal</span>
+        </div>
+      </div>
+    </Reveal>
+  </div>
+</section>

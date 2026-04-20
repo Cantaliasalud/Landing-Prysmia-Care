@@ -1,0 +1,84 @@
+---
+import Reveal from "./motion/Reveal";
+---
+
+<section class="section-shell section-spacing" id="punto-ciego">
+  <div class="blindspot-layout">
+    <Reveal client:load direction="right" className="blindspot-layout__headline">
+      <div class="section-copy section-copy--headline-side blindspot-headline">
+        <div class="section-kicker">02 · El punto ciego</div>
+        <h2 class="section-title">
+          La depresión no descansa entre consultas. ¿Por qué su monitoreo sí?
+        </h2>
+      </div>
+    </Reveal>
+
+    <Reveal client:load delay={0.12} direction="up" className="blindspot-layout__body">
+      <div class="section-copy section-copy--centered-text blindspot-body-wrap">
+        <div class="section-body section-body--centered">
+          <p>La depresión es una enfermedad dinámica.</p>
+          <p>
+            El estado emocional, la motivación y la energía del paciente cambian constantemente,
+            pero la práctica clínica actual solo observa estos cambios durante consultas episódicas.
+          </p>
+          <p>Entre sesiones pueden pasar semanas.</p>
+          <p>Durante ese tiempo, la evolución real del paciente permanece invisible.</p>
+          <p>
+            Esto genera una <strong>asimetría de información crítica</strong> entre el paciente y
+            el sistema clínico.
+          </p>
+        </div>
+
+        <p class="section-emphasis section-emphasis--centered">
+          Prysmia Care elimina ese punto ciego mediante monitoreo longitudinal continuo.
+        </p>
+      </div>
+    </Reveal>
+
+    <Reveal client:load delay={0.08} direction="left" className="blindspot-layout__visual">
+      <div class="blindspot-panel">
+        <div class="blindspot-panel__header">
+          <span class="panel-label">Monitoreo episódico</span>
+          <span class="panel-value">Visibilidad fragmentada</span>
+        </div>
+
+        <div class="blindspot-track blindspot-track--episodic">
+          <div class="blindspot-consult">
+            <span class="blindspot-consult__dot"></span>
+            <span class="blindspot-consult__label">Consulta</span>
+          </div>
+          <div class="blindspot-gap">
+            <span class="blindspot-gap__line"></span>
+            <span class="blindspot-gap__line"></span>
+            <span class="blindspot-gap__line"></span>
+          </div>
+          <div class="blindspot-consult">
+            <span class="blindspot-consult__dot"></span>
+            <span class="blindspot-consult__label">Consulta</span>
+          </div>
+        </div>
+
+        <div class="blindspot-panel__divider"></div>
+
+        <div class="blindspot-panel__header">
+          <span class="panel-label">Monitoreo longitudinal</span>
+          <span class="panel-value">Línea continua de datos Prysmia Care</span>
+        </div>
+
+        <div class="blindspot-track blindspot-track--continuous">
+          <div class="blindspot-consult blindspot-consult--minimal">
+            <span class="blindspot-consult__dot"></span>
+          </div>
+          <div class="blindspot-signal">
+            <span class="blindspot-signal__baseline"></span>
+            <span class="blindspot-signal__primary"></span>
+            <span class="blindspot-signal__secondary"></span>
+          </div>
+          <div class="blindspot-consult blindspot-consult--minimal">
+            <span class="blindspot-consult__dot"></span>
+          </div>
+        </div>
+      </div>
+    </Reveal>
+  </div>
+</section>

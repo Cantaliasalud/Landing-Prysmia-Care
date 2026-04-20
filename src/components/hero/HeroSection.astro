@@ -1,0 +1,74 @@
+---
+import SignalField from "./SignalField";
+---
+
+<section class="hero-section relative overflow-hidden">
+  <div class="section-shell flex min-h-[124vh] flex-col">
+    <header class="relative z-20 flex items-center justify-between gap-6 py-6">
+      <a href="/" class="inline-flex items-center">
+        <img
+          src="/logo-prysmia-care.png"
+          alt="Prysmia Care"
+          class="h-10 w-auto object-contain md:h-12"
+          loading="eager"
+        />
+      </a>
+
+      <div class="hidden items-center gap-3 md:flex">
+        <a href="#hero" class="button-secondary text-sm">La visión</a>
+        <a
+          href="https://forms.gle/1mjV3x8cjYAstQPw8"
+          target="_blank"
+          rel="noreferrer noopener"
+          class="button-primary text-sm">
+          Solicitar acceso temprano
+        </a>
+      </div>
+    </header>
+
+    <div id="hero" class="relative z-10 flex flex-1 items-center pb-20 pt-10 md:pb-32">
+      <div class="hero-visual">
+        <SignalField client:load />
+      </div>
+
+      <div class="hero-copy relative z-20 pt-16 md:pt-24">
+        <div class="eyebrow mb-6">Neurotech · biometría · ciencia</div>
+
+        <h1 class="hero-title">
+          La primera infraestructura de biometría pupilar para la depresión de precisión.
+        </h1>
+
+        <div class="mt-8 w-full max-w-[72rem] space-y-4 text-base leading-7 text-[var(--color-text-soft)] md:text-[1.12rem] md:leading-8">
+          <p>Prysmia Care transforma la evolución de la depresión en datos fisiológicos accionables.</p>
+          <p>De la subjetividad del relato clínico a la precisión de la fisiología.</p>
+        </div>
+
+        <div class="mt-12 flex flex-col gap-4 sm:flex-row sm:items-center">
+          <a
+            href="https://forms.gle/1mjV3x8cjYAstQPw8"
+            target="_blank"
+            rel="noreferrer noopener"
+            class="button-primary justify-center">
+            Solicitar acceso temprano
+          </a>
+          <a href="#tecnologia" class="button-secondary justify-center">Explorar tecnología</a>
+        </div>
+
+        <div class="hero-metadata mt-14">
+          <div class="hero-metadata__item">
+            <span class="hero-metadata__label">Biometría pupilar</span>
+            <span class="hero-metadata__value">Señal fisiológica accesible</span>
+          </div>
+          <div class="hero-metadata__item">
+            <span class="hero-metadata__label">Monitoreo longitudinal</span>
+            <span class="hero-metadata__value">Datos continuos entre consultas</span>
+          </div>
+          <div class="hero-metadata__item">
+            <span class="hero-metadata__label">Sin hardware especializado</span>
+            <span class="hero-metadata__value">Webcam y smartphone</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

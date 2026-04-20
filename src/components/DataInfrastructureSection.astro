@@ -1,0 +1,44 @@
+---
+import MetricsStrip from "./data/MetricsStrip";
+import Reveal from "./motion/Reveal";
+---
+
+<section class="section-shell section-spacing" id="infraestructura">
+  <div class="section-stack">
+    <div class="section-grid section-grid--compact items-start">
+      <Reveal client:load direction="left">
+        <div class="section-copy section-copy--headline-side">
+          <div class="section-kicker">04 · Infraestructura de datos</div>
+          <h2 class="section-title">
+            Construyendo la infraestructura de datos longitudinales de la depresión
+          </h2>
+        </div>
+      </Reveal>
+
+      <Reveal client:load delay={0.08} direction="right">
+        <div class="section-copy">
+          <div class="section-body mt-0">
+            <p>Prysmia Care no es solo una aplicación clínica.</p>
+            <p>
+              Un activo de datos estructurado bajo estándares regulatorios SaMD, diseñado para la
+              validación de intervenciones y el modelado de recaídas.
+            </p>
+            <p>
+              Cada interacción del paciente genera datos clínicos estructurados que permiten modelar
+              la evolución del trastorno a lo largo del tiempo.
+            </p>
+          </div>
+        </div>
+      </Reveal>
+    </div>
+
+    <Reveal client:load delay={0.14} direction="up">
+      <div class="data-shell data-shell--centered">
+        <MetricsStrip client:load />
+        <p class="section-emphasis data-shell__closing">
+          Cada nuevo paciente fortalece el modelo y aumenta el valor clínico del sistema.
+        </p>
+      </div>
+    </Reveal>
+  </div>
+</section>
