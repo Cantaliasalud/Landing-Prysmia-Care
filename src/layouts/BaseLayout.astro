@@ -20,7 +20,11 @@ const {
     <meta name="description" content={description} />
     <meta name="generator" content={Astro.generator} />
     <meta name="theme-color" content="#000C18" />
+    
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    
     <title>{title}</title>
+    
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -28,7 +32,7 @@ const {
       rel="stylesheet"
     />
   </head>
-  <body class="min-h-screen bg-[var(--color-bg)] text-white antialiased">
+  <body class="min-h-screen bg-[#000C18] text-white antialiased">
     <div aria-hidden="true" class="page-backdrop"></div>
     <slot />
   </body>
